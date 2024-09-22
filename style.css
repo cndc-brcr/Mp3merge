@@ -9,21 +9,22 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
+    padding: 0;
 }
 
 #login-form, #mp3-player {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h2{
-  color: #4CAF50;
+  color: #ccccff;
 }
 
 input[type="text"], input[type="password"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
