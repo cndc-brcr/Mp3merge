@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINIverse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-form">
+      <svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1">
+      <stop offset="0%" stop-color="purple" />
+      <stop offset="100%" stop-color="teal" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="130" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="25" font-family="Verdana" x="80" y="79">BINIverse</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+        <h2>Login</h2>  
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="login-message"></p>
+    </div>
+    
+    <div id="mp3-player" style="display:none;">
+    <h2>MP3 Player</h2>
+    <select id="track-select" onchange="changeTrack()">
+        <option value="" disabled selected>Select a track</option>
+        <option value="/BINI - _Lagi_ Color-coded Lyrics.mp3">Lagi-BINI</option>
+        <option value="/BINI - Salamin Salamin (Lyrics).mp3">Salamin Salamin-BINI</option>
+        <option value="/bini_pantropiko_lyrics_mp3_30602.mp3">Pantropiko-BINI</option>
+        <option value="/Huwag Muna Tayong Umuwi - BINI (Color Coded Lyrics).mp3">Huwag Na Muna Tayong Umuwi-BINI</option>
+    </select>
+    <audio id="audio" controls></audio>
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="nextTrack()">Next</button>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>

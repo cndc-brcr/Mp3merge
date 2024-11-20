@@ -1,0 +1,94 @@
+ /* General Styles (existing) */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('/20220628-PAGEONE-BINI.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+#login-form {
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin:5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#mp3-player {
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin:5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #ccccff;
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ /* Media Query for Large Desktops (1024px and above) */
+@media (min-width: 1024px) {
+    #login-form {
+        width: 400px; /* Further increase width */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 95%; /* Maximize input width */
+    }
+}
+
+/* Media Query for Small Devices (up to 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Add padding for small screens */
+    }
+
+    #login-form {
+        width: 80%; /* Almost full width for small screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Reduce font size */
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 90%; /* Full width for input fields */
+    }
+
+    button {
+        width: 80%; /* Full width for buttons */
+    }
+}
